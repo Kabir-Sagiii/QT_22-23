@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+}
+.navSection {
+  height: 70px;
+  background: linear-gradient(120deg, black, red, black);
+}
+
+.flexContainer {
+  width: 1170px;
+  height: 100px;
+
+  margin: 30px auto;
+  display: flex;
+  flex-direction: row;
+}
+.box {
+  width: 150px;
+
+  text-align: center;
+}
+.bgImage {
+  height: 330px;
+  width: 1200px;
+  margin: 20px auto;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/53dcf24ecc20bf27.jpg?q=20");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}

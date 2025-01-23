@@ -1,0 +1,23 @@
+.container {
+  width: 1200px;
+  height: 500px;
+  border: 2px solid blue;
+
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.box {
+  width: 100px;
+  height: 100px;
+}
+.box1 {
+  background-color: lightcoral;
+}
+.box2 {
+  background-color: lightgreen;
+}
+.box3 {
+  background-color: lightgray;
+}
