@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        box-shadow: 0 0 10px black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: red;
+        font-weight: bold;
+        transition-property: transform;
+        transition-duration: 2s;
+        transition-delay: 2s;
+      }
+
+      .box:hover {
+        background-color: red;
+        color: black;
+        /* transform: translate(-400px); */
+        transform: skew(30deg, -30deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Element</div>
+  </body>
+</html>
