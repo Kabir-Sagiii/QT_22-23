@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function changeToMale() {
+        var imageDOMReferences = document.getElementsByClassName("gender");
+        console.log(imageDOMReferences);
+
+        var imag1Dom = imageDOMReferences[0];
+        imag1Dom.src =
+          "https://i0.wp.com/www.torontophotographerz.com/wp-content/uploads/2017/06/Business-portrait-23.jpg?fit=800%2C1200&ssl=1";
+
+        imageDOMReferences[1].src =
+          "https://www.crushpixel.com/big-static7/preview4/portrait-young-professional-man-suit-258742.jpg";
+      }
+    </script>
+  </head>
+  <body>
+    <img
+      class="gender"
+      src="https://th.bing.com/th/id/OIP.vf6tqF3ZfAAvJsEqI5-ubgHaLH?rs=1&pid=ImgDetMain"
+      width="300"
+      height="300"
+    />
+    <img
+      class="gender"
+      src="https://th.bing.com/th/id/OIP.9k_GOA2TNHH70WjDdav4owAAAA?rs=1&pid=ImgDetMain"
+      width="300"
+      height="300"
+    /><br /><br />
+    <button onclick="changeToMale()">Male</button>
+    <button disabled>female</button>
+  </body>
+</html>

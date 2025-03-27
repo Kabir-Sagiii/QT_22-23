@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM</title>
+    <script>
+      function updatetitle() {
+        var h2DomElement = document.querySelector("h2");
+
+        for (var key in h2DomElement) {
+          console.log(key);
+        }
+        // h2DomElement.innerText = "Hello Javascript Engi's";
+        // h2DomElement.style.color = "Red";
+        // h2DomElement.style.backgroundColor = "black";
+        // h2DomElement.style.padding = "30px";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2>Welcome to JS</h2>
+      <button onclick="updatetitle()">Modify</button>
+    </div>
+  </body>
+</html>

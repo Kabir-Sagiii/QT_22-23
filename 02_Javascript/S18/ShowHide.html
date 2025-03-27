@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        width: 500px;
+        box-shadow: 0 0 10px green;
+        margin: 50px auto;
+        padding: 50px 20px;
+        text-align: center;
+      }
+    </style>
+    <script>
+      function showHidePassword() {
+        // var input = document.querySelector("input");
+        // input.type = "text";
+
+        if (document.querySelector("input").type === "password") {
+          document.querySelector("input").type = "text";
+          document.querySelector("button").innerText = "Hide Password";
+        } else {
+          document.querySelector("input").type = "password";
+          document.querySelector("button").innerText = "Show Password";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Show / Hide Password Task</h2>
+      <input type="password" placeholder="password" />
+      <button onclick="showHidePassword()">Show Password</button>
+    </div>
+  </body>
+</html>
