@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function createUI() {
+        var div = document.createElement("div");
+        var input = document.createElement("input");
+        var button = document.createElement("button");
+
+        button.innerText = "Delete";
+
+        button.onclick = function () {
+          div.remove();
+        };
+
+        div.style.width = "300px";
+        div.style.padding = "30px";
+        div.style.border = "2px solid green";
+        div.style.margin = "20px 0px";
+        div.style.textAlign = "center";
+
+        div.appendChild(input);
+        div.appendChild(button);
+
+        document.querySelector("body").appendChild(div);
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="createUI()">Create UI</button>
+  </body>
+</html>

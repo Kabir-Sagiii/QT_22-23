@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function fnCreatePara() {
+        var pDOM = document.createElement("p");
+        //<p> </p>
+
+        pDOM.innerText = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem natus, quo
+    sit veritatis, non nemo sapiente dignissimos accusantium quasi mollitia
+    nihil itaque dolor sequi! Veniam cumque quibusdam hic rem, sit consequuntur,
+    temporibus repellat culpa distinctio voluptatum consectetur optio, tempora
+    ab non? Doloremque nemo neque sapiente tempora quis repellat facilis quaerat
+    dolores? Voluptas eum molestiae dolore repudiandae asperiores iure expedita,
+    veniam eius debitis odio, inventore impedit possimus nesciunt, laudantium
+    aliquam modi dolorem. Similique ipsum consectetur blanditiis inventore
+    aperiam! Consectetur dolorem perferendis voluptates doloremque dolores
+    possimus fugiat doloribus eius id, a ratione temporibus cumque ducimus
+    incidunt at hic autem accusamus? Earum, quisquam!`;
+
+        var bodyDomElement = document.querySelector("body");
+        bodyDomElement.appendChild(pDOM);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Create Element</h2>
+
+    <button onclick="fnCreatePara()">Add Para</button>
+  </body>
+</html>
