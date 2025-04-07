@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      #card {
+        width: 270px;
+        text-align: center;
+        background-color: black;
+        color: white;
+        height: 300px;
+        padding: 10px;
+      }
+    </style>
+
+    <!-- 1.React 2.ReactDOM 3.Babel -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      var h3Style = {
+        color: "green",
+        backgroundColor: "white",
+      };
+
+      function createCard(image, username) {
+        return (
+          <div id="card">
+            <img src={image} width="270" height="200" />
+            <h3 style={{ color: "red" }}>{username}</h3>
+          </div>
+        );
+      }
+
+      function multiCards() {
+        return (
+          <div id="container">
+            {createCard(
+              "https://c.pxhere.com/photos/08/7a/male_portrait_profile_social_media_cv_young_elegant_suit-459413.jpg!d",
+              "Rohan Jaiswal"
+            )}
+            {createCard(
+              "https://th.bing.com/th/id/OIP.vf6tqF3ZfAAvJsEqI5-ubgHaLH?rs=1&pid=ImgDetMain",
+              "Pooja Reddy"
+            )}
+            {createCard(
+              "https://i.pinimg.com/originals/b5/e6/d6/b5e6d6c39a235e9f7b2ec8ef12ee565d.jpg",
+              "Riya Sharma"
+            )}
+            {createCard(
+              "https://th.bing.com/th/id/OIP.9k_GOA2TNHH70WjDdav4owAAAA?rs=1&pid=ImgDetMain",
+              "Preeti Patil"
+            )}
+          </div>
+        );
+      }
+
+      ReactDOM.render(multiCards(), document.getElementById("root"));
+    </script>
+  </body>
+</html>
