@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        box-shadow: 0 0 10px green;
+        width: 800px;
+        margin: 30px auto;
+        padding: 20px;
+      }
+    </style>
+    <!-- 1.React 2.ReactDOM 3.Babel -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Container({ category, price }) {
+        //paramter = { category:"Electronics" ,price:3456}
+        return (
+          <div className="container">
+            <h2> {category} Products </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              recusandae praesentium maxime mollitia explicabo commodi odio non
+              id inventore, officiis, cupiditate nisi obcaecati atque quasi
+              similique accusantium aperiam tempore, tenetur rerum eaque
+              voluptates? Quae ratione ipsa praesentium? Tempora, cum fuga nisi
+              provident non assumenda sunt repellendus vel inventore nulla, iste
+              eveniet reiciendis saepe perferendis accusamus quisquam tenetur
+              nobis aut numquam ipsa distinctio. Fuga illum asperiores molestiae
+              quod quas consectetur facere!
+            </p>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div className="app">
+            <Container category={"Electronic"} price={3456} />
+
+            <Container category="Jewelery" />
+            
+            <Container category="MensC" />
+            <Container category="WomensC"> </Container>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
