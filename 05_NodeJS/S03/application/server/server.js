@@ -4,7 +4,7 @@ const fs = require("fs");
 const server = http.createServer((req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
 
-  fs.readFile("document1.txt", "utf-8", (error, data) => {
+  fs.readFile("document.txt", "utf-8", (error, data) => {
     if (error) {
       res.end("Failed to access the data");
     } else {

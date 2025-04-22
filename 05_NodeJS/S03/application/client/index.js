@@ -1,5 +1,5 @@
 function getData() {
-  fetch("http://localhost:6960")
+  fetch("http://localhost:6969")
     .then((res) => {
       return res.text();
     })
