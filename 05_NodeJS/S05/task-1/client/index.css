@@ -1,0 +1,27 @@
+.container {
+  width: 300px;
+  margin: 50px auto;
+  box-shadow: 0 0 10px black;
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+.container div {
+  margin-bottom: 20px;
+}
+input {
+  width: 150px;
+  height: 30px;
+  border-radius: 7px;
+}
+input:focus {
+  outline: none;
+  border: 5px solid green;
+}
+button {
+  padding: 7px 30px;
+}
+input::placeholder {
+  text-align: center;
+}
