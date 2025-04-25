@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      /* Reset styles */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      .login-container {
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 40px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        width: 90%;
+        max-width: 400px;
+        color: #fff;
+        animation: fadeIn 1.2s ease-in-out;
+      }
+
+      .login-form h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 600;
+        color: #ffffff;
+      }
+
+      .input-group {
+        position: relative;
+        margin-bottom: 30px;
+      }
+
+      .input-group input {
+        width: 100%;
+        padding: 14px;
+        background: transparent;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        color: #fff;
+        outline: none;
+      }
+
+      .input-group label {
+        position: absolute;
+        top: 50%;
+        left: 14px;
+        color: #ccc;
+        pointer-events: none;
+        transform: translateY(-50%);
+        transition: 0.3s;
+      }
+
+      .input-group input:focus + label,
+      .input-group input:valid + label {
+        top: 0;
+        left: 10px;
+        font-size: 12px;
+        background: #2a5298;
+        padding: 0 5px;
+        color: #fff;
+        border-radius: 4px;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        background: #00c6ff;
+        background: linear-gradient(to right, #0072ff, #00c6ff);
+        border-radius: 8px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+      }
+
+      button:hover {
+        background: linear-gradient(to right, #00c6ff, #0072ff);
+      }
+
+      .signup-link {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #ccc;
+      }
+
+      .signup-link a {
+        color: #00c6ff;
+        text-decoration: none;
+      }
+
+      @keyframes fadeIn {
+        from {
+          transform: translateY(-20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stylish Login Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <form class="login-form">
+        <h2>Welcome Back</h2>
+        <div class="input-group">
+          <input type="text" required />
+          <label>Username</label>
+        </div>
+        <div class="input-group">
+          <input type="password" required />
+          <label>Password</label>
+        </div>
+        <button type="submit">Login</button>
+        <p class="signup-link">
+          Don't have an account? <a href="#">Sign up</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
