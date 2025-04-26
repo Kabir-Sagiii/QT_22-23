@@ -1,0 +1,39 @@
+.products {
+  margin-top: 30px;
+}
+
+.products .brandContainer {
+  width: 1200px;
+  height: 300px;
+  box-shadow: 0 0 10px black;
+  margin: 20px auto;
+  background-image: url("https://watermark.lovepik.com/photo/20211210/large/lovepik-electronic-products-in-gray-background-picture_501795604.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+}
+.brandContainer .shadow {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.shadow h1 {
+  color: white;
+  width: 800px;
+  margin: 0px auto;
+  text-align: center;
+}
+.shadow h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.products .product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-top: 20px;
+}
