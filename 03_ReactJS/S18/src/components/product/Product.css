@@ -1,0 +1,25 @@
+.card {
+  width: 270px;
+  text-align: center;
+  box-shadow: 0 0 10px green;
+  padding: 20px;
+}
+.card h4 {
+  margin: 10px 0px;
+  color: green;
+}
+.card p {
+  margin-bottom: 7px;
+}
+.card button {
+  padding: 5px 20px;
+  margin-right: 5px;
+}
+
+/* .product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-top: 20px;
+} */

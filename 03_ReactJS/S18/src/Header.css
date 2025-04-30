@@ -1,0 +1,56 @@
+.header {
+  height: 80px;
+  background-color: black;
+  color: white;
+  display: flex;
+}
+.header .brand {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 20%;
+  margin: 0px 50px;
+}
+.header .categories {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 60%;
+}
+.header .categories a {
+  color: white;
+  text-decoration: none;
+  margin-right: 42px;
+  font-size: 19px;
+}
+.categories a:hover {
+  color: blue;
+}
+.categories a:active {
+  color: green;
+}
+
+.logos {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.logos button {
+  border: 3px solid red;
+  outline: none;
+  color: red;
+  padding: 7px 20px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  background: none;
+}
+.logos button:hover {
+  background-color: red;
+  color: white;
+}
+.logos i {
+  font-size: 27px;
+  font-weight: bold;
+}
