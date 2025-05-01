@@ -1,0 +1,35 @@
+.product-details {
+  display: flex;
+
+  width: 1000px;
+  margin: 10px auto;
+  box-shadow: 0 0 10px black;
+}
+.product-details .imageDiv {
+  width: 35%;
+  padding: 10px;
+}
+.product-details .contentDiv {
+  width: 60%;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+.product-details button {
+  padding: 7px 20px;
+  background: none;
+  border: 2px solid green;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.product-details button:hover {
+  background-color: green;
+}
+.product-details .contentDiv dt {
+  color: green;
+}
+.product-details .contentDiv dd {
+  margin-bottom: 10px;
+}
